@@ -33,7 +33,8 @@ Tienen un emulador de la computadora y el circuito para el Logisim en el [blog](
 0xD:  11111111    #  FF  #    ?
 0xE:  00000000    #  00  #  0
 ```
-El valor de 0xE sera 06.
+El valor de 0xE sera 12.
+Si 0xE es el resultado del mismo (12), termina dando que 0xE es 24.
 
 2. Consideren el siguiente _hexdump_ de la memoria de TOY-8. O sea un volcado de la memoria en hexadecimal. ¿Cuántos programas distintos pueden encontrar? Indicar cuáles bytes interpretan como instrucciones y cuáles como datos.
 
