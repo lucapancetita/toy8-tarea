@@ -44,6 +44,7 @@ Si 0xE es el resultado del mismo (12), termina dando que 0xE es 24.
 0x8   A7 6D 2E C7
 0xc   00 FF 01 00
 ```
+Hay x programas. Hay 4 instrucciones (A5, 26, C7 Y 00) y 11 datos (08, 05, 00, A7, 6D, 2E, C7, 00, FF, 01 y 00)
 
 3. Para el primer programa del ejercicio anterior. ¿Qué líneas de control se activan para cada instrucción? ¿Cuál es el valor del bus de datos y de instrucciones en cada instrucción? Completen la siguiente tabla, agreguen las filas que sean necesarias.
 
