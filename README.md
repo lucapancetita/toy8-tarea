@@ -57,17 +57,17 @@ Hay x programas. Hay 4 instrucciones (A5, 26, C7 Y 00) y 11 datos (08, 05, 00, A
 4. El siguiente programa suma los números que encuentra en la entrada hasta que aparece un cero, y luego envía el resultado a la salida. Traducirlo a ensamblador y a C siguiendo el ejemplo de las primeras dos líneas.
 
 ```
-0x1:  A0   #  lw 0  #
+0x1:  A0   #  lw 0  #  float R = 0;
 0x2:  CE   #  sw E  #  int sum = 0;
-0x3:  AF
-0x4:  E9
-0x5:  2E
-0x6:  CE
-0x7:  A0
-0x8:  E3
-0x9:  AE
-0xA:  CF
-0xB:  00
+0x3:  AF   #  lw F  #  float R = 15;
+0x4:  E9   #  bze 9 #  if (R = 0) { float R = 0; }
+0x5:  2E   #  add E #    
+0x6:  CE   #  sw E  #  int sum = 0;
+0x7:  A0   #  lw 0  #  
+0x8:  E3   #  bze 3 #  if (R = 0) { 3 }
+0x9:  AE   #  lw E  #
+0xA:  CF   #  sw F  #  int sum = 0;
+0xB:  00   #  halt  #  
 ```
 
 5. Una mejora que le podríamos hacer a esta computadora es duplicar la cantidad de memoria, pasar de 16 bytes a 32 bytes. ¿Cómo lo harían manteniendo la longitud de las instrucciones en 8 bits? ¿Qué partes de la CPU habría que modificar y cómo?
