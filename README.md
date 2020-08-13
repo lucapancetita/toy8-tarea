@@ -72,7 +72,7 @@ Hay 2 programas. El primero 4 instrucciones (A5, 26, C7 y 00) y 3 datos (08, 05 
 0x8:  E3   #  bze 3 #  if (R = 0) { int R = 0; }
 0x9:  AE   #  lw E  #  int R = 0;
 0xA:  CF   #  sw F  #  int sum = 0;
-0xB:  00   #  halt  #  
+0xB:  00   #  halt  #  getch();
 ```
 
 
