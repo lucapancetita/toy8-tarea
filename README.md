@@ -44,7 +44,7 @@ El programa multiplica 2 numeros. En este caso 6*3.
 0x8   A7 6D 2E C7
 0xc   00 FF 01 00
 ```
-Hay x programas. Hay 4 instrucciones (A5, 26, C7 Y 00) y 11 datos (08, 05, 00, A7, 6D, 2E, C7, 00, FF, 01 y 00)
+Hay 2 programas. El primero 4 instrucciones (A5, 26, C7 y 00) y 3 datos (08, 05 y 00), el segundo tiene 5 instrucciones (A7, 6D, 2E, C7 y 00) y 3 datos (FF, 01 y 00).
 
 3. Para el primer programa del ejercicio anterior. ¿Qué líneas de control se activan para cada instrucción? ¿Cuál es el valor del bus de datos y de instrucciones en cada instrucción? Completen la siguiente tabla, agreguen las filas que sean necesarias.
 
