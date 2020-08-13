@@ -30,7 +30,7 @@ Tienen un emulador de la computadora y el circuito para el Logisim en el [blog](
 0xA:  00000000    #  00  #  halt
 0xB:  00000011    #  03  #  3
 0xC:  00000110    #  06  #  6
-0xD:  11111111    #  FF  #    ?
+0xD:  11111111    #  FF  #  FF
 0xE:  00000000    #  00  #  0
 ```
 El valor de 0xE sera 12.
@@ -52,7 +52,12 @@ Hay 2 programas. El primero 4 instrucciones (A5, 26, C7 y 00) y 3 datos (08, 05 
 |---|---|--------------|---|---|
 |A5 |0  |IR en         |A5 |1  |
 |A5 |1  |R en, addr mux|08 |5  |
-|26 |0  |              |   |   |
+|26 |0  |IR en         |26 |2  |
+|26 |1  |R en, addr mux|5  |6  |
+|C7 |0  |IR en         |C7 |3  |
+|C7 |1  |RAM str, addr mux|13 |7 |
+|00 |0  |IR en         |0  |4  |
+|00 |1  |Halt          |8  |5  |
 
 4. El siguiente programa suma los números que encuentra en la entrada hasta que aparece un cero, y luego envía el resultado a la salida. Traducirlo a ensamblador y a C siguiendo el ejemplo de las primeras dos líneas.
 
