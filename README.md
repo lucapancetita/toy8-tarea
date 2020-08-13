@@ -1,6 +1,6 @@
 # Arquitectura TOY-8
 
-Nombre y apellido:
+Nombre y apellido: Luca Suriano
 
 ## Instrucciones
 
