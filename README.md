@@ -77,3 +77,6 @@ Hay 2 programas. El primero 4 instrucciones (A5, 26, C7 y 00) y 3 datos (08, 05 
 
 
 5. Una mejora que le podríamos hacer a esta computadora es duplicar la cantidad de memoria, pasar de 16 bytes a 32 bytes. ¿Cómo lo harían manteniendo la longitud de las instrucciones en 8 bits? ¿Qué partes de la CPU habría que modificar y cómo?
+
+Lo que hice fue añadir una segunda RAM exactamente igual a la que ya estaba para asi llegar a los 32 bytes. Luego use un Demultiplexor para que se seleccione que memoria quiero que la PC elija cuando yo le ponga 1, un Mux que conecte las salidas de ambas memorias y otro Demultiplexor para seleccionar que Ram quiero que se escriba; todos conectados al addr mux de la Unidad de Control. De esta manera uso la primera memoria para escribir instrucciones y la segunda para los datos que necesite el programa.
+Deje el archivo de logisim adjuntado.
